@@ -45,14 +45,24 @@ export default function AssetCreate() {
 
       <br />
 
-      <input
-        type="text"
-        placeholder="Owner"
-        value={owner}
-        onChange={(e) =>
-          setOwner(e.target.value)
-        }
-      />
+      <select
+  value={owner}
+  onChange={(e) =>
+    setOwner(e.target.value)
+  }
+>
+  <option value="">
+    Seleccione propietario
+  </option>
+
+  <option value="GCZPP5ZQUD7HWPLM6BMF4HGETDZIFQNK7I5H3OFBL6GXQ5MQ65E7PGDL">
+    Alice
+  </option>
+
+  <option value="GCNCCFVL77GXWSFQA3LPHICMFQNAH7HMRTA2HTVTYE2HMEOXNMAEP4PZ">
+    Bob
+  </option>
+</select>
 
       <br />
 

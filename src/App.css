@@ -42,3 +42,11 @@ button {
 button:hover {
   background-color: #1d4ed8;
 }
+
+select{
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #d1d5db;
+  border-radius: 6px;
+}

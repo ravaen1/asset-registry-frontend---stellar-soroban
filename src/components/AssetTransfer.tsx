@@ -40,14 +40,24 @@ export default function AssetTransfer() {
 
       <br />
 
-      <input
-        type="text"
-        placeholder="Nuevo Owner"
-        value={newOwner}
-        onChange={(e) =>
-          setNewOwner(e.target.value)
-        }
-      />
+      <select
+  value={newOwner}
+  onChange={(e) =>
+    setNewOwner(e.target.value)
+  }
+>
+  <option value="">
+    Seleccione propietario
+  </option>
+
+  <option value="GCZPP5ZQUD7HWPLM6BMF4HGETDZIFQNK7I5H3OFBL6GXQ5MQ65E7PGDL">
+    Alice
+  </option>
+
+  <option value="GCNCCFVL77GXWSFQA3LPHICMFQNAH7HMRTA2HTVTYE2HMEOXNMAEP4PZ">
+    Bob
+  </option>
+</select>
 
       <br />
 
