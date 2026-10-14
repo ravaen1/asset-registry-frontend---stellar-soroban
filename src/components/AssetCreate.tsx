@@ -4,7 +4,7 @@ import api from "../services/api";
 export default function AssetCreate() {
   const [assetId, setAssetId] = useState("");
   const [owner, setOwner] = useState("");
-  const [metadataUri, setMetadataUri] =
+  const [description, setDescription] =
     useState("");
 
   const [message, setMessage] =
@@ -17,7 +17,7 @@ export default function AssetCreate() {
         {
           assetId,
           owner,
-          metadataUri
+          description
         }
       );
 
@@ -68,10 +68,10 @@ export default function AssetCreate() {
 
       <input
         type="text"
-        placeholder="Metadata URI"
-        value={metadataUri}
+        placeholder="Descripcion del activo"
+        value={description}
         onChange={(e) =>
-          setMetadataUri(e.target.value)
+          setDescription(e.target.value)
         }
       />
 
