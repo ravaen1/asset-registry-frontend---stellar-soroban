@@ -44,7 +44,7 @@ export default function AssetSearch() {
           </p>
 
           <p>
-            <strong>Metadata:</strong> {asset.metadataUri}
+            <strong>Descripción del Activo:</strong> {asset.description}
           </p>
         </div>
       )}
